@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Tony's Outreach</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span>🎯 Tony's Outreach</span><button id="conn" class="conn" hidden title="GitHub connection">⚙️</button></div>
+    <div class="stats">
+      <div class="stat"><span class="stat-num" id="stat-sent">–</span><span class="stat-label">Sent</span></div>
+      <div class="stat"><span class="stat-num" id="stat-replies">–</span><span class="stat-label">Replies</span></div>
+      <div class="stat"><span class="stat-num" id="stat-togo">–</span><span class="stat-label">To go</span></div>
+    </div>
+    <div class="bar"><div class="bar-fill" id="bar-fill"></div></div>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="donow">Do Now <span class="count" id="count-donow"></span></button>
+      <button class="tab" data-tab="sent">Sent <span class="count" id="count-sent"></span></button>
+      <button class="tab" data-tab="wins">Wins <span class="count" id="count-wins"></span></button>
+    </nav>
+  </header>
+
+  <div class="stage">
+    <aside class="demo-rail demo-rail-left" id="demo-left" hidden aria-label="InkHold demos"></aside>
+    <main id="view" aria-live="polite"></main>
+    <aside class="demo-rail demo-rail-right" id="demo-right" hidden aria-label="More InkHold demos"></aside>
+  </div>
+
+  <footer class="honesty">
+    Signals ≠ confirmed openings — verify the raise/launch before you cite it. Never invent names or emails.
+  </footer>
+
+  <div id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
